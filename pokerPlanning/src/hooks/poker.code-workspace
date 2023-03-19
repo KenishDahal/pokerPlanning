@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "backend",
+		"path": "../../../../../../../Applications/MAMP/backend"
+	},
+	{
+		"name": "pokerPlanning",
+		"path": "../../.."
+	}
+],
+  "settings": {}
+}

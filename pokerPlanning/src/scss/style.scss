@@ -1,0 +1,16 @@
+@use "./util/breakpoints" as u;
+@import "./globals/_typo";
+
+
+
+// components
+@import "./components/button";
+@import "./components/Modal/modal.scss";
+@import "./components/nav/navbar.scss";
+@import "../pages/Login/login.scss";
+@import "../pages/Signup/signup.scss";
+@import "../components/sidebar/homeSidebar/sidebar.scss";
+@import "../components/sidebar/stroySidebar/storySidebar.scss";
+
+
+@import "../pages/Home/home.scss";

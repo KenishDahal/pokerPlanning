@@ -1,0 +1,22 @@
+-- CREATE TABLE session_members (
+--   id INT(100) PRIMARY KEY NOT NULL AUTO_INCREMENT;
+--   member_id INT(100) NOT NULL ,
+--   session_id VARCHAR(100) NOT NULL,
+--   role ENUM('moderator', 'member'),
+--   PRIMARY KEY (member_id, session_id),
+--   FOREIGN KEY (member_id) REFERENCES users(id),
+--   FOREIGN KEY (session_id) REFERENCES sessions(id)
+-- );
+
+-- ALTER TABLE session_members
+-- ADD COLUMN id INT(100) PRIMARY KEY NOT NULL AUTO_INCREMENT;
+
+CREATE TABLE stories (
+  id INT(100) PRIMARY KEY NOT NULL AUTO_INCREMENT;
+  session_id VARCHAR(100) NOT NULL,
+  name TEXT NOT NULL,
+  description TEXT
+    status TEXT NOT NULL CHECK (status IN ('active', 'closed'))
+
+  FOREIGN KEY (session_id) REFERENCES sessions(id)
+);

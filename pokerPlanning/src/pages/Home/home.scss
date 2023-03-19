@@ -1,0 +1,45 @@
+.poker--cards {
+  display: grid;
+  grid-template-columns: 10rem auto 10rem;
+  &__individual {
+    // display: grid;
+    // grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    &__number {
+      border: 2px solid red;
+      width: 100px;
+      height: 10px;
+      margin: 5px;
+      align-items: center;
+    }
+  }
+}
+
+@include u.breakpoint-down(medium) {
+  .poker--cards {
+    grid-template-columns: auto;
+    &__individual {
+      // grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+      &__number {
+        width: 70px;
+        height: 70px;
+        margin: 3px;
+      }
+    }
+  }
+}
+
+@include u.breakpoint-down(small) {
+  .poker--cards {
+    // grid-template-columns: 5rem auto;
+    grid-template-rows: 5rem auto;
+
+    &__individual {
+      // grid-template-columns:  1fr 1fr 1fr;
+      &__number {
+        width: 70px;
+        height: 70px;
+        margin: 1px;
+      }
+    }
+  }
+}

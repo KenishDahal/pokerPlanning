@@ -1,0 +1,60 @@
+.modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    &--content{
+        width: 700px;
+        border-radius: 10px;
+        max-width: 1000px;
+        background-color: rgb(6, 223, 252);
+        margin: auto;
+        &__header{
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            &__title{
+            
+            }
+            button{
+                width: 100px;
+                font-size: 30px;
+            }
+        }
+        &__body{
+            padding: 30px;
+            border-top: 2px solid rgb(204, 175, 175);
+            border-bottom: 2px solid rgb(204, 175, 175);
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                input{
+                    width: 100%;
+                    padding: 10px;
+                    height: 50px;
+                    font-size: 2rem;
+                    border: 2px solid #A1A5AF;
+                    border-radius: 4px;
+                    resize: none /*z-index: 1;*/;
+                    outline: none;
+                    transition: all .2s cubic-bezier(0.626, 0.000, 0.000, 1.000);
+                }
+                button{
+                    background-color: rgb(252, 60, 7);
+                }
+                textarea{
+                    height: 100px;
+                }
+            }
+   
+        }
+        &__footer{
+            padding: 10px;
+        }
+    }
+}

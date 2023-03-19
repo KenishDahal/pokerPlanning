@@ -1,0 +1,40 @@
+.main {
+  position: relative;
+  &--storySidebar {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 100px;
+    gap: 20px;
+    background-color: rgb(6, 223, 252);
+    &__score {
+      width: 100%;
+      padding: 20px;
+      &__text {
+      }
+    }
+    &__board {
+      padding: 20px;
+    }
+    &__tab {
+      padding: 20px;
+      button {
+        background-color: green;
+        color: white;
+      }
+    }
+  }
+
+  @include u.breakpoint(large) {
+    .main--storySidebar {
+      height: 80vh;
+      &__tab {
+        button {
+          position: absolute;
+          bottom: 0;
+          width: 130px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+h1,
+.h1,
+.display-1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 400;
+    letter-spacing: -2%;
+   
+    @include u.breakpoint-down(small){
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+      }
+}
+
+h2,
+.h2 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    @include u.breakpoint-down(small){
+        font-size: 2.3rem;
+        line-height: 2.7rem;
+      }
+}
+
+h3,
+.h3 {
+    font-size: 2.4rem;
+    line-height: 2.76rem;
+    letter-spacing: -2%;
+    font-weight: 400;
+}
+
+h4,
+.h4 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    font-weight: 400;
+    // @include media-breakpoint-up(xl) {
+    //     font-size: 2.8rem;
+    //     line-height: 3rem;
+    // }
+}
+
+h5,
+.h5{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 400;
+    // @include media-breakpoint-up(xl) {
+    //     font-size: 2.3rem;
+    //     line-height: 2.8rem;
+    // }
+    @include u.breakpoint-down(small){
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+      }
+}
+
+h6,
+.h6 {
+    font-size: 1.6rem;
+    line-height: 1.93rem;
+    letter-spacing: 10%;
+    font-weight: 600;
+    // @include media-breakpoint-up(xl) {
+    //     font-size: 1.8rem;
+    //     line-height: 2rem;
+    // }
+}
+.body-xl {
+    font-size: 2.3rem;
+    line-height: 3.22rem;
+    // @include media-breakpoint-up(xl) {
+    //     font-size: 2.8rem;
+    //     line-height: 3.92rem;
+    // }
+}
+.body-l {
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    font-weight: 400;
+    // @include media-breakpoint-up(xl) {
+    //     font-size: 2.3rem;
+    //     line-height: 3.45rem;
+    // }
+}
+.body {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    @include u.breakpoint-down(small){
+        font-size: 1.1rem;
+        line-height: 1.9rem;
+      }
+}
+
+.eyebrow {
+    font-size: 1.4rem;
+    line-height: 1;
+    @include u.breakpoint-down(small){
+        font-size: 0.9rem;
+        line-height: 0.5rem;
+      }
+}
+
+.quote {
+    &-1 {
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+     
+    }
+}
+
+.button,
+.btn {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    // @include media-breakpoint-up(xl) {
+    //     font-size: 2rem;
+    //     line-height: 2rem;
+    // }
+}
+
+a {
+    text-decoration: none;
+    // @extend .transition-fast;
+}
+
+caption{  
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 500;
+    // @include media-breakpoint-up(xl) {
+    //     font-weight: 500;
+    //     font-size: 1.4rem;
+    //     line-height: 2.1rem;
+    // }
+}
+
